@@ -115,7 +115,7 @@
                             <label>E-Book</label>
 
                             <?php if(!empty($data_buku['e_book'])): ?>
-                            <embed src="<?= base_url('Assets/E-Book/'.$data_buku['e_book']);?>" type="application/pdf" width="100%" height="400px" style="margin-bottom: 10px; border: 1px solid #ddd;"></embed>
+                            <iframe src="<?= base_url('Assets/E-Book/'.$data_buku['e_book']);?>" width="100%" height="400px" style="margin-bottom: 10px; border: 1px solid #ddd;"></iframe>
                             <p>Jika PDF tidak muncul, <a href="<?= base_url('Assets/E-Book/'.$data_buku['e_book']);?>" target="_blank">klik di sini untuk mengunduh/melihat PDF</a>.</p>
                             <?php endif; ?>
 
